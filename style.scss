@@ -44,8 +44,8 @@ body {
           box-shadow: 0 0 5px black;
         }
 
-        @media screen and (max-width: 650px) {
-          font-size: 28px;
+        @media screen and (max-width: 900px) {
+          font-size: 20px;
           margin: auto;
           margin-top: 20px;
           display: flex;
@@ -57,7 +57,7 @@ body {
         margin: auto;
         align-items: center;
         color: #6aab55;
-        width: 40%;
+        width: 80%;
 
         & p {
           font-size: 1.6rem;
@@ -66,6 +66,10 @@ body {
           box-shadow: 0 0 5px black;
           text-align: center;
           padding: 9px;
+
+          @media screen and (max-width: 650px) {
+            font-size: 20px;
+          }
         }
       }
     }
@@ -87,6 +91,7 @@ body {
     }
     @media screen and (max-width: 650px) {
       font-size: 7rem;
+      margin-top: 50px;
     }
   }
 }
@@ -103,16 +108,21 @@ body {
   button:focus {
     outline: none;
   }
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 650px), screen and (max-height: 600px) {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 0px;
   }
   .guess__wrap {
     display: flex;
     flex-direction: column;
     padding: 5px;
     margin-top: 50px;
+
+    @media screen and (max-width: 650px) {
+      margin-bottom: 100px;
+    }
   }
 
   .input {
@@ -128,11 +138,21 @@ body {
     border-left-style: hidden;
     color: rgb(194, 223, 194);
 
+    @media screen and (max-width: 650px) {
+      font-size: 15px;
+      width: 80%;
+      margin: auto;
+    }
+
     &::placeholder {
       color: rgb(194, 223, 194);
       opacity: 0.7;
       font-size: 27px;
       text-align: center;
+
+      @media screen and (max-width: 650px) {
+        font-size: 15px;
+      }
     }
 
     &:hover {
@@ -148,6 +168,14 @@ body {
     font-size: 1.6rem;
     border: 2px solid lightgoldenrodyellow;
 
+    @media screen and (max-width: 650px) {
+      font-size: 15px;
+      padding: 6px;
+      width: 40%;
+      margin: auto;
+      margin-top: 10px;
+    }
+
     &:hover {
       box-shadow: 0 0 5px white;
       color: white;
@@ -160,12 +188,17 @@ body {
     font-weight: lighter;
 
     @media screen and (max-width: 650px) {
-      font-size: 2rem;
+      font-size: 1.7rem;
+      margin-top: -90px;
     }
 
     .message {
       color: rgb(194, 223, 194);
       margin-bottom: 60px;
+
+      @media screen and (max-width: 650px) {
+        margin-bottom: 40px;
+      }
     }
 
     .score {

@@ -52,9 +52,9 @@ body .container__head .container__content #btn__restart:hover {
           box-shadow: 0 0 5px black;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 900px) {
   body .container__head .container__content #btn__restart {
-    font-size: 28px;
+    font-size: 20px;
     margin: auto;
     margin-top: 20px;
     display: -webkit-box;
@@ -75,7 +75,7 @@ body .container__head .container__content .description {
       -ms-flex-align: center;
           align-items: center;
   color: #6aab55;
-  width: 40%;
+  width: 80%;
 }
 
 body .container__head .container__content .description p {
@@ -86,6 +86,12 @@ body .container__head .container__content .description p {
           box-shadow: 0 0 5px black;
   text-align: center;
   padding: 9px;
+}
+
+@media screen and (max-width: 650px) {
+  body .container__head .container__content .description p {
+    font-size: 20px;
+  }
 }
 
 body .secret__number {
@@ -113,6 +119,7 @@ body .secret__number::before, body .secret__number::after {
 @media screen and (max-width: 650px) {
   body .secret__number {
     font-size: 7rem;
+    margin-top: 50px;
   }
 }
 
@@ -138,7 +145,7 @@ body .secret__number::before, body .secret__number::after {
   outline: none;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 650px), screen and (max-height: 600px) {
   .container__main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -150,6 +157,7 @@ body .secret__number::before, body .secret__number::after {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: 0px;
   }
 }
 
@@ -165,6 +173,12 @@ body .secret__number::before, body .secret__number::after {
   margin-top: 50px;
 }
 
+@media screen and (max-width: 650px) {
+  .container__main .guess__wrap {
+    margin-bottom: 100px;
+  }
+}
+
 .container__main .input {
   margin-bottom: 5px;
   height: 60px;
@@ -177,6 +191,14 @@ body .secret__number::before, body .secret__number::after {
   border-right-style: hidden;
   border-left-style: hidden;
   color: #c2dfc2;
+}
+
+@media screen and (max-width: 650px) {
+  .container__main .input {
+    font-size: 15px;
+    width: 80%;
+    margin: auto;
+  }
 }
 
 .container__main .input::-webkit-input-placeholder {
@@ -207,6 +229,21 @@ body .secret__number::before, body .secret__number::after {
   text-align: center;
 }
 
+@media screen and (max-width: 650px) {
+  .container__main .input::-webkit-input-placeholder {
+    font-size: 15px;
+  }
+  .container__main .input:-ms-input-placeholder {
+    font-size: 15px;
+  }
+  .container__main .input::-ms-input-placeholder {
+    font-size: 15px;
+  }
+  .container__main .input::placeholder {
+    font-size: 15px;
+  }
+}
+
 .container__main .input:hover {
   border-bottom: 2px solid white;
 }
@@ -218,6 +255,16 @@ body .secret__number::before, body .secret__number::after {
   color: #c2dfc2;
   font-size: 1.6rem;
   border: 2px solid lightgoldenrodyellow;
+}
+
+@media screen and (max-width: 650px) {
+  .container__main .btn__guess {
+    font-size: 15px;
+    padding: 6px;
+    width: 40%;
+    margin: auto;
+    margin-top: 10px;
+  }
 }
 
 .container__main .btn__guess:hover {
@@ -234,13 +281,20 @@ body .secret__number::before, body .secret__number::after {
 
 @media screen and (max-width: 650px) {
   .container__main .stats {
-    font-size: 2rem;
+    font-size: 1.7rem;
+    margin-top: -90px;
   }
 }
 
 .container__main .stats .message {
   color: #c2dfc2;
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 650px) {
+  .container__main .stats .message {
+    margin-bottom: 40px;
+  }
 }
 
 .container__main .stats .score {
