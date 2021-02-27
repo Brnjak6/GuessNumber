@@ -58,5 +58,5 @@ document.querySelector("#btn__restart").addEventListener("click", function () {
   document.querySelector(".message").textContent = "Start guessing...";
   document.querySelector(".message").style.color = "rgb(194, 223, 194)";
   document.querySelector(".secret__number").textContent = "?";
-  document.body.style.background = "url(images/1.jpg)";
+  document.body.style.background = "url(images/main.jpg)";
 });
